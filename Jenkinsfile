@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Submit Stack') {
             steps {
-            sh "aws cloudformation create-stack --stack-name tcs-demo-test-hyd-bucket --template-body file://simplests3cft.json --region 'us-west-1'"
+            sh "aws cloudformation create-stack --stack-name infosys-auto-hyd-stack --template-body file://s3cft.yml --region 'us-west-1'"
               }
              }
             }
